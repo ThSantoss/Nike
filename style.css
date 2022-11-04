@@ -1,0 +1,219 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+  color: #ffff;
+  background: #18206f;
+  position: relative;
+}
+body::after {
+  content: "nike";
+  width: 100%;
+  height: 700px;
+  position: absolute;
+  top: 200px;
+  margin: 0 auto;
+  font-size: 30rem;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #15367e;
+  text-align: center;
+  z-index: -1;
+}
+
+@media (max-width: 800px) {
+  body::after {
+    content: "nike";
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    top: 650px;
+    margin: 0 auto;
+    font-size: 15.5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    color: #15367e;
+    text-align: center;
+    z-index: -1;
+  }
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  max-width: 1200px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin: 20px;
+  padding: 10px 20px;
+  text-decoration-line: none;
+  color: #ffff;
+  display: block;
+}
+.busca {
+  width: 60px;
+  margin: 0 20px;
+}
+.compra {
+  width: 60px;
+  margin: 0 20px;
+}
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+  }
+  .header a {
+    color: #000;
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+}
+
+.introducao {
+  z-index: 1000;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+.introducao div {
+  margin: 0px 50px;
+  font-size: 1.12rem;
+}
+.introducao {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.do-it {
+  display: block;
+  max-width: 180px;
+}
+
+.conteudo-1 p {
+  line-height: 1.6;
+  max-width: 220px;
+}
+
+.div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div3 h2 {
+  color: #feab20;
+  margin: 10px;
+}
+
+.div3 span {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.div3 button {
+  border: none;
+  border-radius: 10px;
+  background-color: #df5c2f;
+  color: #fffaff;
+  margin: 10px 8px;
+  padding: 5px;
+  width: 50%;
+}
+
+.lista-tenis {
+  margin: 0px 50px;
+  display: flex;
+}
+
+.lista-tenis li {
+  background: #fff;
+  color: #000;
+  margin: 70px 20px;
+  display: flex;
+  border-radius: 16rem;
+}
+
+.lista-tenis li img {
+  width: 50%;
+  gap: 20px;
+}
+
+.lista-tenis div {
+  padding: 20px;
+  margin: auto 0;
+}
+
+@media (max-width: 800px) {
+  .introducao {
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introducao div {
+    margin: 20px 0;
+  }
+  .do-it {
+    margin: 20px 0;
+    font-size: 2.6rem;
+    max-width: 220px;
+  }
+
+
+.lista-tenis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.lista-tenis li img {
+ margin: 10px 0px;
+  width: 30%;
+  gap: 0px;
+}
+.lista-tenis li {
+  background: #fff;
+  color: #000;
+  margin: 20px 20px;
+  display: flex;
+  border-radius: 3rem;
+}
+.lista-tenis div {
+  padding: 30px;
+  margin: 0px 0px;
+}
+}
